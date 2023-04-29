@@ -1,0 +1,60 @@
+body{
+    -webkit-font-feature-smoothing: antialiased;
+    background: url(body.jpeg) no-repeat fixed center/cover;
+}
+
+
+.logo_image{
+    background-color: black;
+}
+.logo_image img{
+    width: 250px;
+    height: 180px;
+    margin-left: 0em;
+}
+.main_header{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 288;
+ }
+
+::after, ::before {
+    box-sizing: inherit;
+  }
+
+.pages{
+    font-style: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 20px;
+}
+.pages a{
+    font-size: 20px;
+    margin-right: 20px;
+    margin-bottom: 20em;
+    color: white;
+}
+
+.description{
+   margin-top: 8em;
+   font-size: 30px;
+   text-transform: capitalize;
+   color: white;
+}
+.sign_up{
+    float: right;
+    font-size: 20px;
+    border: none;
+    background-color: red;
+    border-radius: 10px;
+}
+.sign_in{
+    float: right;
+    font-size: 20px;
+    border: none;
+    background-color: red;
+    border-radius: 10px;
+}

@@ -1,0 +1,73 @@
+body{
+    background: url("building\ and\ car.jpg") no-repeat center center/cover;
+    
+}
+.logo_image{
+    background-color: black;
+}
+.logo_image img{
+    width: 250px;
+    height: 180px;
+    margin-left: 0em;
+}
+.main_header{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 288;
+ }
+
+::after, ::before {
+    box-sizing: inherit;
+  }
+  .pages{
+    margin-bottom: 2em;
+    justify-content: center;
+    align-items: center;
+    font-style: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 20px;
+}
+.pages a{
+    font-size: 20px;
+    margin-right: 20px;
+    margin-bottom: 20em;
+    color: white;
+}
+.sign_up{
+    float: right;
+    font-size: 20px;
+    border: none;
+    background-color: red;
+    border-radius: 10px;
+}
+.sign_in{
+    float: right;
+    font-size: 20px;
+    border: none;
+    background-color: red;
+    border-radius: 10px;
+}
+.info{
+    margin-left: 40em;
+    margin-top: 13rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.list{
+    color: rgb(220, 18, 18);
+    
+}
+.list a{
+color: rgb(220, 220, 220);
+}
+label{
+    color: rgb(227, 227, 227);
+}
+h1{
+    color: rgb(141, 152, 255);
+}

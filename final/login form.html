@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logincss.css">
+    <title>login form</title>
+</head>
+<body>
+    
+    <h3>if you don't  have an account then <a href="sign up.html">sign up</a></h3>
+    <!-- email and password-->
+    <form method="post" id="lgform">
+        <div class="container">
+            <h1>Sign In</h1>
+            <h3>Please enter your account.</h3>
+           
+
+          <!--email-->
+          <label for="email"><b>Email:</b></label>
+          <input type="email" placeholder="Enter Email" name="email" id="email" required>
+      
+          <!--password-->
+          <label for="psw"><b>Password:</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+        
+          <button type="submit" id="submit" onclick="validateForm()">Login</button>
+          
+            <input type="checkbox" checked="checked" name="remember"> 
+            <label>Remember me</label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        
+        </div>
+    </form> 
+    <script>
+      function validateForm() {
+   'use strict';
+   
+   // Get references to the form elements:
+   var email = document.getElementById('email');
+   var password = document.getElementById('password');
+
+   // Validate the login
+   if ((email.value.length > 0) && (password.value.length > 0)) {
+       window.location = "home page.html"
+       return true;
+   } 
+}
+
+
+
+
+function init() {
+   'use strict';
+
+   // Confirm that document.getElementById() can be used:
+   if (document && document.getElementById) {
+       var loginForm = document.getElementById('lgform');
+       loginForm.onsubmit = validateForm();
+
+   }
+}
+window.onload = init;
+
+   </script>
+
+
+    
+    
+  
+</body>
+</html>
